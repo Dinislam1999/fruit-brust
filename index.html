@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 <!-- Google font Loto -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- Tailwind Custom classes -->
 <script>
    tailwind.config = {
@@ -44,28 +44,27 @@
 <body class="font-loto">
    <!-- nav-bar section -->
     <header>
-        <nav class="text-center">
-            <div class="navbar content-start text-base-100 bg-orange-600 p-2 my-1 rounded-3xl">
-                <ul class="menu menu-horizontal navbar-start gap-2">
+        <nav class="container md:container">
+            <div class="hidden md:flex navbar justify-between bg-main-color rounded-full px-6 mt-8">
+                <ul class="flex gap-x-4 text-white">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
                     <li><a>All Fruits</a></li>
                   </ul>
-                <div class="navbar-center gap-2">
+                <div class="justify-center">
                     <img src="./images/logo.png" />
-                  <a class="btn btn-ghost normal-case text-center text-2xl">Fruit Burst</a>
+                  <a class="btn  normal-case text-center text-2xl">Fruit Burst</a>
                 </div>
-                <div class="flex-none  navbar-end gap-0">
-                  <div class="form-control">
-                    <input type="search" placeholder="Search here" class="input input-bordered w-24 md:w-auto" />
-                  </div>
-                </div>
+                <div class="input w-24 md:w-auto rounded-full">
+                  <input type="text" placeholder="Search here" class="py-3 px-2 focus:outline-none rounded-full" />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
               </div>
         </nav>
     <!-- Mobile header -->
     <div class="navbar md:hidden bg-base-100 justify-between">
-      <div class="navbar-start w-32">
+      <div class="navbar-start w-25">
         <img class="w-full" src="./images/logo-dark.png" alt="Logo">
       </div>
       <div class="navbar-end">
@@ -87,11 +86,10 @@
       </div>
     </div>
 </header>
-
 <!-- *************************************** -->
 <!-- Banner Section -->
-    <main class="gap-2 my-5">
-      <div class="carousel w-full">
+    <main class="container md:container">
+      <div class="carousel w-full  p-0 md:py-5">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./images/banner1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -179,28 +177,28 @@
            </div>
            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-6 md:pt-0">
               <div class="flex flex-col">
-                 <span class="countdown font-mono text-4xl md:text-5xl">
+                 <span class="countdown font-mono text-3xl md:text-xl">
                     <span class="font-bold" style="--value: 29"></span>
                  </span>
                  days
               </div>
               <h2 class="text-3xl md:text-4xl">:</h2>
               <div class="flex flex-col">
-                 <span class="countdown font-mono text-4xl md:text-5xl">
+                 <span class="countdown font-mono text-3xl md:text-4xl">
                     <span class="font-bold" style="--value: 15"></span>
                  </span>
                  hours
               </div>
               <h2 class="text-3xl md:text-4xl">:</h2>
               <div class="flex flex-col">
-                 <span class="countdown font-mono text-4xl md:text-5xl">
+                 <span class="countdown font-mono text-3xl md:text-4xl">
                     <span class="font-bold" style="--value: 25"></span>
                  </span>
                  min
               </div>
               <h2 class="text-3xl md:text-4xl">:</h2>
               <div class="flex flex-col">
-                 <span class="countdown font-mono text-4xl md:text-5xl">
+                 <span class="countdown font-mono text-3xl md:text-4xl">
                     <span class="font-bold" style="--value: 08"></span>
                  </span>
                  sec
@@ -666,7 +664,7 @@
     </main>
     <!-- Footer section -->
     <footer class="footer footer-center p-10 bg-info-content text-base-100 rounded">
-        <div class="footer-center justify-self-center ">
+        <div class="container md:container footer-center justify-self-center ">
             <img src="./images/logo.png" />
           <a class="btn btn-ghost normal-case text-center text-xl">Fruit Burst</a>
         </div>
